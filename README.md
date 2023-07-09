@@ -171,6 +171,8 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
+INSERT TEXT HERE DESCRIBING THE NEXT STEPS
+
 ```python
 import pandas as pd
 from pathlib import Path
@@ -182,6 +184,8 @@ import numpy as np
 ### NeuralNetwork Model: 
 
 ![Copy Repo](/photos/installation_guide.png)
+
+INSERT TEXT HERE DESCRIBING THE NEXT STEPS
 
 ```python
 import pandas as pd
@@ -195,6 +199,8 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
+INSERT TEXT HERE DESCRIBING THE NEXT STEPS
+
 ```python
 import pandas as pd
 from pathlib import Path
@@ -206,6 +212,8 @@ import numpy as np
 ### Next Steps 
 
 ![Copy Repo](/photos/installation_guide.png)
+
+INSERT TEXT HERE DESCRIBING THE NEXT STEPS
 
 ```python
 import pandas as pd
