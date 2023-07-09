@@ -159,6 +159,8 @@ Now that we have built out the primary dataset, we can begin to use Machine Lear
 
 ![Copy Repo](/photos/installation_guide.png)
 
+Our first attempt the predictors using Apples P/E ratio, and 50 and 200 day MA, and included other variables of 1 and 5 year treasury yields and a news score based on sentiment. Running this model resulted in a 57% Precision Score. The second Random Forest attempt using 23 years of price data with predictors of daily Apple; volume, open, high, low and close prices resulted in a 55% Precision score.
+
 ```python
 import pandas as pd
 from pathlib import Path
@@ -171,7 +173,7 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
-INSERT TEXT HERE DESCRIBING THE NEXT STEPS
+Using 'EBIDTA', 'EV/EBITDA', 'EPS', 'P/E', '1 YR', '5 YR', '30 YR', '50 MA', '200 MA', 'News', 'News Score', 'Percent Change', 'Target - B/H/S (based on close - daily % change)' all the parameters we have currently in our dataset we yielded the best results. We had to change the news and target columns  to numerical values  so that the model would be able to accept the data.
 
 ```python
 import pandas as pd
@@ -185,7 +187,7 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
-INSERT TEXT HERE DESCRIBING THE NEXT STEPS
+After backtesting and manual optimization, we found the neural network to be less than ideal for predicting the correct BUY or SELL classification.  
 
 ```python
 import pandas as pd
@@ -199,15 +201,7 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
-INSERT TEXT HERE DESCRIBING THE NEXT STEPS
-
-```python
-import pandas as pd
-from pathlib import Path
-import yfinance as yf
-from sklearn.impute import SimpleImputer
-import numpy as np
-```
+Our best model was the Logistic Regression Model. This was in line with our expectations, given the formatting of our dataset and the fact that this is ultimately a classification problem. Please see the image outlining the precision, recall, F1 score, support, and accuracy score of the model.
 
 ### Next Steps 
 
@@ -222,7 +216,5 @@ We found this classification problem to be very interesting, and found that ther
 
 ## SOURCES:
 
-https://www.portfoliovisualizer.com/optimize-portfolio#analysisResults 
-https://www.investopedia.com/terms/s/sharperatio.asp 
-https://www.youtube.com/watch?v=Usxer0D-WWM (Youtube: How to make an Efficient Frontier Using Python)
-https://towardsdatascience.com/efficient-frontier-portfolio-optimisation-in-python-e7844051e7f
+* https://www.youtube.com/watch?v=gfwNK3o45ng
+* https://towardsdatascience.com/is-it-possible-to-predict-stock-prices-with-a-neural-network-d750af3de50b
