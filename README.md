@@ -143,3 +143,10 @@ Create an export .csv file to be able to import this data to analyst_rating, whi
 ## Export to .csv
 ch3.to_csv('sentiment_analysis.csv')
 ```
+
+## SOURCES:
+
+https://www.portfoliovisualizer.com/optimize-portfolio#analysisResults 
+https://www.investopedia.com/terms/s/sharperatio.asp 
+https://www.youtube.com/watch?v=Usxer0D-WWM (Youtube: How to make an Efficient Frontier Using Python)
+https://towardsdatascience.com/efficient-frontier-portfolio-optimisation-in-python-e7844051e7f
