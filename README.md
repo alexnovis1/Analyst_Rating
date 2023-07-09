@@ -2,11 +2,13 @@
 
 ## Introduction: 
 
+![Copy Repo](/photos/installation_guide.png)
+
 Indeed, no one has a magic crystal ball that can predict the market with 100% accuracy. However, this does not stop the billion-dollar industry of active money managers who attempt to beat the benchmark by executing on a particular view in the market. These firms, like quant hedge funds, multi-manager funds, fundamental/quantamental funds, etc., rely on equity research that is distributed by major investment banks on the street. 
 
 At almost every major investment bank, there is an equity research division, where an Analyst is responsible for covering a small universe of say 10 stocks in a particular sector. Currently, they rely primarily on fundamentals and traditional financial modeling - something we feel is now antiquated in the age of Machine Learning. 
 
-We built this project to challenge this notion; to build a set of models that can predict the rating of a stock (BUY/SELL/HOLD) to a greater degree of accuracy than fundamentals could. Essentially, we built a classification model that replaces the sell-side equity analyst covering a particular stock.
+We built this project to challenge this notion; to build a classification model that can predict the rating of a stock (BUY/SELL/HOLD) to a greater degree of accuracy than fundamentals could. Essentially, we built a classification model that replaces the sell-side equity analyst covering a particular stock.
 
 We take a look at multiple factors within four categories: Technical, Fundamental, Macro, and News Sentiment, and after building a dataset containing these factors, we look to see if these are drivers for Price Action. Our goal is to construct a successful Predicted Model utilizing `RandomForest`, `LogisticalRegression`, and `Neural Network`. 
 
@@ -68,7 +70,6 @@ import matplotlib.pyplot as plt
 pd.read_csv("Resources/dataset.csv", index_col="2021 - 2023 AAPL Daily Data (Index)", infer_datetime_format=True, parse_dates=True)
 ```
 
-
 ## Usage for `analyst_rating.ipynb`:
 
 Split the data by quarterly time ranges. This will make it easier to combine fundamental data. 
@@ -86,10 +87,10 @@ aapl_1['EPS'] = 1.53
 aapl_1['EBITDA'] = 31260000000
 ```
 
-> Note: EPS and EBITDA were hard coded into the dataframe. You can view these values in Yahoo Finance. 
+> Note: EPS and EBITDA were hard-coded into the data frame. You can view these values in Yahoo Finance. 
 
 
-Make sure to replace string values provided in the `cashflow` and `balancesheet` data. The only way the dataframe can recongnize all data is to transform them to float64 values.
+Make sure to replace string values provided in the `cashflow` and `balancesheet` data. The only way the data frame can recognize all data is to transform them to float64 values.
 
 ```python
 # Begin to clean strings dtypes by replacing commas 
@@ -148,6 +149,70 @@ Create an export .csv file to be able to import this data to analyst_rating, whi
 ```python
 ## Export to .csv
 ch3.to_csv('sentiment_analysis.csv')
+```
+
+Now that we have built out the primary dataset, we can begin to use Machine Learning to build a predictive classification model.
+
+![Copy Repo](/photos/installation_guide.png)
+
+### RandomForest Model: 
+
+![Copy Repo](/photos/installation_guide.png)
+
+```python
+import pandas as pd
+from pathlib import Path
+import yfinance as yf
+from sklearn.impute import SimpleImputer
+import numpy as np
+```
+
+### LogisticRegression Model: 
+
+![Copy Repo](/photos/installation_guide.png)
+
+```python
+import pandas as pd
+from pathlib import Path
+import yfinance as yf
+from sklearn.impute import SimpleImputer
+import numpy as np
+```
+
+### NeuralNetwork Model: 
+
+![Copy Repo](/photos/installation_guide.png)
+
+```python
+import pandas as pd
+from pathlib import Path
+import yfinance as yf
+from sklearn.impute import SimpleImputer
+import numpy as np
+```
+
+### Results - Our best model: 
+
+![Copy Repo](/photos/installation_guide.png)
+
+```python
+import pandas as pd
+from pathlib import Path
+import yfinance as yf
+from sklearn.impute import SimpleImputer
+import numpy as np
+```
+
+### Next Steps 
+
+![Copy Repo](/photos/installation_guide.png)
+
+```python
+import pandas as pd
+from pathlib import Path
+import yfinance as yf
+from sklearn.impute import SimpleImputer
+import numpy as np
 ```
 
 ## SOURCES:
