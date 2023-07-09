@@ -213,15 +213,12 @@ import numpy as np
 
 ![Copy Repo](/photos/installation_guide.png)
 
-INSERT TEXT HERE DESCRIBING THE NEXT STEPS
+We found this classification problem to be very interesting, and found that there were many opportunities to further enhance our model:
 
-```python
-import pandas as pd
-from pathlib import Path
-import yfinance as yf
-from sklearn.impute import SimpleImputer
-import numpy as np
-```
+* Further Feature engineering and selection of factors for all three ML models; for example, utilizing more novel factors like alternative data, or utilizing a wider variety of fundamental/technical/macro factors to better improve the predictive accuracy of the model
+* More hyperparameter tuning, specifically with the Neural Network. Experimenting with different optimizers, loss, activation functions, and number of epochs 
+* Taking into account the street consensus - and maybe picking a different stock - AAPL has gone up consistently for 8 years - so maybe better to just hold instead of trade this stock - or pick a more volatile stock
+* Building a larger dataset with 10+ years of stock data instead of 2 years to capture economic cycles. 
 
 ## SOURCES:
 
