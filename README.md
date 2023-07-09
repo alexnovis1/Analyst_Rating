@@ -2,7 +2,13 @@
 
 ## Introduction: 
 
-Taking four categories: Technical, Fundamental, Macro, and News Sentiment, the project takes this data into account as the main drivers for Price Action. Our goal is to construct a successful Predicted Model utilizing `RandomForest`, `LogisticalRegression`, and `Neural Network`. 
+Indeed, no one has a magic crystal ball that can predict the market with 100% accuracy. However, this does not stop the billion-dollar industry of active money managers who attempt to beat the benchmark by executing on a particular view in the market. These firms, like quant hedge funds, multi-manager funds, fundamental/quantamental funds, etc., rely on equity research that is distributed by major investment banks on the street. 
+
+At almost every major investment bank, there is an equity research division, where an Analyst is responsible for covering a small universe of say 10 stocks in a particular sector. Currently, they rely primarily on fundamentals and traditional financial modeling - something we feel is now antiquated in the age of Machine Learning. 
+
+We built this project to challenge this notion; to build a set of models that can predict the rating of a stock (BUY/SELL/HOLD) to a greater degree of accuracy than fundamentals could. Essentially, we built a classification model that replaces the sell-side equity analyst covering a particular stock.
+
+We take a look at multiple factors within four categories: Technical, Fundamental, Macro, and News Sentiment, and after building a dataset containing these factors, we look to see if these are drivers for Price Action. Our goal is to construct a successful Predicted Model utilizing `RandomForest`, `LogisticalRegression`, and `Neural Network`. 
 
 ## Usage: 
 
