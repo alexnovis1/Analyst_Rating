@@ -2,7 +2,7 @@
 
 ## Introduction: 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/intro_image.png)
 
 Indeed, no one has a magic crystal ball that can predict the market with 100% accuracy. However, this does not stop the billion-dollar industry of active money managers who attempt to beat the benchmark by executing on a particular view in the market. These firms, like quant hedge funds, multi-manager funds, fundamental/quantamental funds, etc., rely on equity research that is distributed by major investment banks on the street. 
 
@@ -154,11 +154,11 @@ ch3.to_csv('sentiment_analysis.csv')
 
 Now that we have built out the primary dataset, we can begin to use Machine Learning to build a predictive classification model.
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/dataset.png)
 
 ## RandomForest Model: 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/random_forest.png)
 
 Our first attempt the predictors using Apples P/E ratio, and 50 and 200 day MA, and included other variables of 1 and 5 year treasury yields and a news score based on sentiment. Running this model resulted in a 57% Precision Score. The second Random Forest attempt using 23 years of price data with predictors of daily Apple; volume, open, high, low and close prices resulted in a 55% Precision score.
 
@@ -245,7 +245,7 @@ data.plot.line(y="Close", use_index=True)
 
 ## LogisticRegression Model: 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/logistic_regression.png)
 
 Using 'EBIDTA', 'EV/EBITDA', 'EPS', 'P/E', '1 YR', '5 YR', '30 YR', '50 MA', '200 MA', 'News', 'News Score', 'Percent Change', 'Target - B/H/S (based on close - daily % change). We had to change the news and target columns  to numerical values  so that the model would be able to accept the data.
 
@@ -293,7 +293,7 @@ print(test_report)
 
 ## NeuralNetwork Model: 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/nn.png)
 
 After backtesting and manual optimization, we found the neural network to be less than ideal for predicting the correct BUY or SELL classification. We utilized 2 models. The first model yielded an accuracy score of 0.4701, while the second model gave 0.5203 accuracy score. The difference between the first two models can be found within the hyperparameter tuning. For example, we changed the loss function from Categorical Cross-Entropy to Mean Squared Error, number of hidden nodes from 10 to 20, number of neurons form 2 to 3, and optimizer function from sigmoid to adam. 
 
@@ -311,13 +311,13 @@ fit_model = nn.fit(X_train_scaled, y_train, epochs = 50)
 ```
 ## Results - Our best model: 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/logistic_regression_results.png)
 
 Our best model was the Logistic Regression Model. This was in line with our expectations, given the formatting of our dataset and the fact that this is ultimately a classification problem. Please see the image outlining the precision, recall, F1 score, support, and accuracy score of the model.
 
 ## Next Steps 
 
-![Copy Repo](/photos/installation_guide.png)
+![Intro Image](read_me_images/next_steps.png)
 
 We found this classification problem to be very interesting, and found that there were many opportunities to further enhance our model:
 
