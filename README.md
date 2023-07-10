@@ -1,6 +1,6 @@
 # Analyst_Rating
 
-## The Optimal Model: Sell-Side Equity Research
+## The Optimal Model: Machine-Learning Based Sell-Side Equity Research
 
 ![Intro Image](read_me_images/intro_image.png)
 
