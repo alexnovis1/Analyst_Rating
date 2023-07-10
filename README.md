@@ -1,6 +1,6 @@
 # Analyst_Rating
 
-## Introduction: 
+## The Optimal Model: Sell-Side Equity Research
 
 ![Intro Image](read_me_images/intro_image.png)
 
