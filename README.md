@@ -160,9 +160,7 @@ Now that we have built out the primary dataset, we can begin to use Machine Lear
 
 ![Copy Repo](/photos/installation_guide.png)
 
-```
 Our first attempt the predictors using Apples P/E ratio, and 50 and 200 day MA, and included other variables of 1 and 5 year treasury yields and a news score based on sentiment. Running this model resulted in a 57% Precision Score. The second Random Forest attempt using 23 years of price data with predictors of daily Apple; volume, open, high, low and close prices resulted in a 55% Precision score.
-```
 
 ```
 #Imprt Random Forest
@@ -310,7 +308,7 @@ Model 2
 # Compile the Sequential model
 nn.compile(loss="mean_squared_error", optimizer="adam", metrics=["accuracy"])
 fit_model = nn.fit(X_train_scaled, y_train, epochs = 50)
-
+```
 ## Results - Our best model: 
 
 ![Copy Repo](/photos/installation_guide.png)
