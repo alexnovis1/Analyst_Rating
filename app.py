@@ -145,7 +145,7 @@ with tabs[1]:
     selected_ticker_data_returns = returns[selected_ticker_returns]
     st.line_chart(selected_ticker_data_returns)
 
-    st.image("max_sharpe.png", width=800)
+    st.image("efficient_frontier_1.png", width=800)
     st.image("scipy_visual.png", width=800)
     st.image("mc_min.png", width=800)
 
@@ -235,7 +235,7 @@ with tabs[2]:
 
     elif Model == 'Logistic Regression':
         st.subheader("Our best model was the Logistic Regression Model. This was in line with our expectations, given the formatting of our dataset and the fact that this is ultimately a classification problem. Please see the image outlining the precision, recall, F1 score, support, and accuracy score of the model.")
-        st.image("logistic_regression.png", width=800)
+        st.image("logistic_regression1.png", width=800)
         st.image("logistic_regression_results.png", width=800)
         #READ IN DATA
         df= pd.read_csv("max_rating1.csv")
@@ -292,16 +292,13 @@ with tabs[3]:
     st.balloons()
     col1, col2 = st.columns(2)   
     col1.header("Original")
-    col1.image("max_sharpe.png")
+    col1.image("efficient_frontier_1.png")
     col1.image("log re.png")
     col1.image("neural network 2.png")
     col2.header("Revised")
-    col2.image("max_sharpe_new.png")
+    col2.image("efficient_frontier_2.png")
     col2.image("log re 2.png")
-       
-    col2.image("nn_updated_results.png")
-    col2.image("pairplot_selected_variables_max.png")
-    col2.image("pairplot_selected_variables_max.png")
-    col2.image("time_series_plots_max.png")
-    col2.image("time_series_plots_min.png")
-    col2.image("Pairwise Correlation Heatmap.png")
+    col2.image("neural_network.png")
+    col2.image("pairplot.png")
+    col2.image("time_series.png")
+    col2.image("Heatmap.png")
