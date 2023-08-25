@@ -174,6 +174,8 @@ with tabs[2]:
 
         if uploaded_file is not None:  # Check if a file is uploaded
             df = pd.read_csv(uploaded_file)
+            df.reset_index(drop=True, inplace=True)
+            df.drop(columns=["Unnamed: 0"], inplace=True)  
             st.markdown('**Sample of dataset**')
             st.write(df)
 
